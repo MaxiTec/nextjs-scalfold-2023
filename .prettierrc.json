@@ -1,0 +1,19 @@
+{
+    "bracketSameLine": false,
+    "bracketSpacing": true,
+    "jsxSingleQuote": false,
+    "printWidth": 100,
+    "quoteProps": "as-needed",
+    "requirePragma": false,
+    "semi": false,
+    "singleAttributePerLine": true,
+    "singleQuote": true,
+    "jsxBracketSameLine": false,
+    "tabWidth": 2,
+    "trailingComma": "none",
+    "useTabs": false,
+    "endOfLine": "lf",
+    "importOrder": ["^@core/(.*)$", "^@server/(.*)$", "^@ui/(.*)$", "^[./]"],
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true
+  }
