@@ -1,0 +1,69 @@
+// colors
+$primary-color: #023041;
+$secondary-color: #4bd8b7;
+$tertiary-color: #e22d75;
+$text-color: #444444;
+$text-selection-bg: rgba($primary-color, 30%);
+$body-background: white;
+$heading-color: white;
+
+$primary-color-hover: rgba($primary-color, 20%);
+$secondary-color-hover: rgba($secondary-color, 20%);
+$tertiary-color-hover: rgba($tertiary-color, 20%);
+
+// State Colors
+$success-color: #0fad39;
+$warning-color: #c8b226;
+$error-color: #ff0000;
+
+$white: #fff;
+$black: #000;
+$disabled-color: fade(#000, 25%);
+$disabled-bg: hsv(0, 0, 96%);
+
+// FONTS
+$font-size-base: 12px;
+$font-size-lg: $font-size-base + 2px;
+$font-size-sm: $font-size-base - 2px;
+
+$line-height-base: 1.5;
+$primary-font: 'Roboto', sans-serif;
+$heading-1-size: ceil($font-size-base * 2.71);
+// ICONS
+$icon-size-base: 1rem;
+$icon-size-2xs: $icon-size-base - ($icon-size-base / 8 * 3);
+$icon-size-xs: $icon-size-base - ($icon-size-base / 8 * 2);
+$icon-size-sm: $icon-size-base - ($icon-size-base / 8 * 1);
+$icon-size-md: $icon-size-base;
+$icon-size-lg: $icon-size-base + ($icon-size-base / 8 * 2);
+$icon-size-xl: $icon-size-base + ($icon-size-base / 8 * 4);
+$icon-size-2xl: $icon-size-base * 2;
+// BORDERS
+$border-radius-base: 0.25rem;
+// LINKS
+$link-color: $primary-color;
+$link-hover-color-light: rgba($primary-color, 20%);
+$link-hover-color-darken: darken($primary-color, 20%);
+// shadows
+$shadow-menu: 0 0 14px 0 rgb(0 0 0 / 10%);
+$shadow-buttons: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+// Esto se repetira en todos lados por que se injecta desde el SassOptions (no se assusten) solo son variables que no renderizan
+/* ---------------------------------------------------------------------
+-----------------------Add all your variables here ---------------------
+-----------------------------------------------------------------------*/
+@import 'include-media';
+@import '@/styles/base/_mixins.scss';
+$breakpoints: (
+  xs: 640px,
+  sm: 768px,
+  md: 1024px,
+  lg: 1280px,
+  xl: 1400px
+);
+// export all your variables to be used in JS
+:export {
+  primaryColor: $primary-color;
+  secondaryColor: $secondary-color;
+  tertiaryColor: $tertiary-color;
+  textColor: $text-color;
+}

@@ -1,3 +1,12 @@
 {
-  "extends": ["next", "prettier"]
+  "extends": ["next", "prettier"],
+  "rules": {
+    "no-unused-vars": "error",
+    // REACT
+    "react/no-unknown-property": ["error", { "ignore": ["jsx", "global"] }], // ignoramos la palabra global de styled jsx
+    "react/no-unescaped-entities": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react/jsx-filename-extension": "off"
+  }
 }

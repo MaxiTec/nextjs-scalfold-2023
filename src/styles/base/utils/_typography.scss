@@ -1,0 +1,122 @@
+.text-center {
+  text-align: center;
+  @include media('>=sm') {
+    text-align: center;
+  }
+  @include media('>=md') {
+    text-align: center;
+  }
+  @include media('>=lg') {
+    text-align: center;
+  }
+}
+.text-left {
+  text-align: left;
+  @include media('>=sm') {
+    text-align: left;
+  }
+  @include media('>=md') {
+    text-align: left;
+  }
+  @include media('>=lg') {
+    text-align: left;
+  }
+}
+.text-right {
+  text-align: right;
+  @include media('>=sm') {
+    text-align: right;
+  }
+  @include media('>=md') {
+    text-align: right;
+  }
+  @include media('>=lg') {
+    text-align: right;
+  }
+}
+.text-justify {
+  text-align: justify;
+  @include media('>=sm') {
+    text-align: justify;
+  }
+  @include media('>=md') {
+    text-align: justify;
+  }
+  @include media('>=lg') {
+    text-align: justify;
+  }
+}
+.text-nowrap {
+  white-space: nowrap;
+  @include media('>=sm') {
+    white-space: nowrap;
+  }
+  @include media('>=md') {
+    white-space: nowrap;
+  }
+  @include media('>=lg') {
+    white-space: nowrap;
+  }
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+  @include media('>=sm') {
+    text-transform: lowercase;
+  }
+  @include media('>=md') {
+    text-transform: lowercase;
+  }
+  @include media('>=lg') {
+    text-transform: lowercase;
+  }
+}
+.text-uppercase {
+  text-transform: uppercase;
+  @include media('>=sm') {
+    text-transform: uppercase;
+  }
+  @include media('>=md') {
+    text-transform: uppercase;
+  }
+  @include media('>=lg') {
+    text-transform: uppercase;
+  }
+}
+.text-capitalize {
+  text-transform: capitalize;
+  @include media('>=sm') {
+    text-transform: capitalize;
+  }
+  @include media('>=md') {
+    text-transform: capitalize;
+  }
+  @include media('>=lg') {
+    text-transform: capitalize;
+  }
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+.no-underline {
+  text-decoration: none;
+}
+.font-weight-light {
+  font-weight: 300;
+}
+.font-weight-normal {
+  font-weight: 400;
+}
+.font-weight-bold {
+  font-weight: 700;
+}
+.font-weight-bolder {
+  font-weight: 900;
+}
+.font-italic {
+  font-style: italic;
+}
+.font-underline {
+  text-decoration: underline;
+}

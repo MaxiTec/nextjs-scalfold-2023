@@ -1,38 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Next Base Js
 
-First, run the development server:
+An simple scalfod to start a new project with Next Js.
 
+
+## License
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
+
+## Features
+
+- Remove unused CSS
+- Linter and formatter included
+- Husky implementation
+- Conventional commits
+- Sass variables exported
+- Path mapping
+- Sass flexBox (Oasis version)
+- Scss modules
+
+
+## Acknowledgements
+
+ - [sassflexboxgrid](http://sassflexboxgrid.com/)
+ - [husky](https://typicode.github.io/husky/#/)
+ - [Next Js](https://nextjs.org/)
+
+
+## Authors
+
+- [@maxtec](https://github.com/MaxTec)
+
+
+## Basic folder structure
+
+![App Screenshot](https://spaceohrtest.sfo2.cdn.digitaloceanspaces.com/next-js-base%2FCaptura%20de%20pantalla%202023-02-08%20a%20la(s)%2010.00.01.png)
+
+
+## Installation
+
+Clone the project and install dependencies
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+  git clone https://github.com/MaxiTec/nextjs-scalfold-2023.git
+  cd my-project
+  npm i
 ```
+    
+## Requirements
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Node > 16
+- NPM > 8.3.1

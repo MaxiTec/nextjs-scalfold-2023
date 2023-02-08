@@ -6,4 +6,4 @@ echo 'please be patient, this may take a while...'
 # ejecutamos el script de lint-staged en packaje.json or in .lintstagedrc.js
 npx lint-staged
 
-exit 1 # Commit will be aborted if this script returns non-zero exit code
+# exit 1 # Commit will be aborted if this script returns non-zero exit code

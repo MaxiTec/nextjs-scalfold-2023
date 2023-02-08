@@ -1,0 +1,204 @@
+@for $num from 1 through 25 {
+  .mb-#{$num * 4} {
+    margin-bottom: ($num * 4px);
+    &-sm {
+      @include media('>=sm') {
+        margin-bottom: ($num * 4px);
+      }
+    }
+    &-md {
+      @include media('>=md') {
+        margin-bottom: ($num * 4px);
+      }
+    }
+    &-lg {
+      @include media('>=lg') {
+        margin-bottom: ($num * 4px);
+      }
+    }
+  }
+  .mt-#{$num * 4} {
+    margin-top: ($num * 4px);
+    &-sm {
+      @include media('>=sm') {
+        margin-top: ($num * 4px);
+      }
+    }
+    &-md {
+      @include media('>=md') {
+        margin-top: ($num * 4px);
+      }
+    }
+    &-lg {
+      @include media('>=lg') {
+        margin-top: ($num * 4px);
+      }
+    }
+  }
+  .ml-#{$num * 4} {
+    margin-left: ($num * 4px);
+    &-sm {
+      @include media('>=sm') {
+        margin-left: ($num * 4px);
+      }
+    }
+    &-md {
+      @include media('>=md') {
+        margin-left: ($num * 4px);
+      }
+    }
+    &-lg {
+      @include media('>=lg') {
+        margin-left: ($num * 4px);
+      }
+    }
+  }
+  .mr-#{$num * 4} {
+    margin-right: ($num * 4px);
+    &-sm {
+      @include media('>=sm') {
+        margin-right: ($num * 4px);
+      }
+    }
+    &-md {
+      @include media('>=md') {
+        margin-right: ($num * 4px);
+      }
+    }
+    &-lg {
+      @include media('>=lg') {
+        margin-right: ($num * 4px);
+      }
+    }
+  }
+  .mx-#{$num * 4} {
+    margin-right: ($num * 4px);
+    margin-left: ($num * 4px);
+    &-sm {
+      @include media('>=sm') {
+        margin-right: ($num * 4px);
+        margin-left: ($num * 4px);
+      }
+    }
+    &-md {
+      @include media('>=md') {
+        margin-right: ($num * 4px);
+        margin-left: ($num * 4px);
+      }
+    }
+    &-lg {
+      @include media('>=lg') {
+        margin-right: ($num * 4px);
+        margin-left: ($num * 4px);
+      }
+    }
+  }
+  .pb-#{$num * 4} {
+    padding-bottom: ($num * 4px);
+    &-sm {
+      @include media('>=sm') {
+        padding-bottom: ($num * 4px);
+      }
+    }
+    &-md {
+      @include media('>=md') {
+        padding-bottom: ($num * 4px);
+      }
+    }
+    &-lg {
+      @include media('>=lg') {
+        padding-bottom: ($num * 4px);
+      }
+    }
+  }
+  .pt-#{$num * 4} {
+    padding-top: ($num * 4px);
+    &-sm {
+      @include media('>=sm') {
+        padding-top: ($num * 4px);
+      }
+    }
+    &-md {
+      @include media('>=md') {
+        padding-top: ($num * 4px);
+      }
+    }
+    &-lg {
+      @include media('>=lg') {
+        padding-top: ($num * 4px);
+      }
+    }
+  }
+  .pl-#{$num * 4} {
+    padding-left: ($num * 4px);
+    &-sm {
+      @include media('>=sm') {
+        padding-left: ($num * 4px);
+      }
+    }
+    &-md {
+      @include media('>=md') {
+        padding-left: ($num * 4px);
+      }
+    }
+    &-lg {
+      @include media('>=lg') {
+        padding-left: ($num * 4px);
+      }
+    }
+  }
+  .pr-#{$num * 4} {
+    padding-right: ($num * 4px);
+    &-sm {
+      @include media('>=sm') {
+        padding-right: ($num * 4px);
+      }
+    }
+    &-md {
+      @include media('>=md') {
+        padding-right: ($num * 4px);
+      }
+    }
+    &-lg {
+      @include media('>=lg') {
+        padding-right: ($num * 4px);
+      }
+    }
+  }
+  .no-margin {
+    margin: 0;
+    &-sm {
+      @include media('>=sm') {
+        margin: 0;
+      }
+    }
+    &-md {
+      @include media('>=md') {
+        margin: 0;
+      }
+    }
+    &-lg {
+      @include media('>=lg') {
+        margin: 0;
+      }
+    }
+  }
+  .no-padding {
+    padding: 0;
+    &-sm {
+      @include media('>=sm') {
+        padding: 0;
+      }
+    }
+    &-md {
+      @include media('>=md') {
+        padding: 0;
+      }
+    }
+    &-lg {
+      @include media('>=lg') {
+        padding: 0;
+      }
+    }
+  }
+}

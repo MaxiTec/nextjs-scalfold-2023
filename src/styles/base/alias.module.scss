@@ -1,0 +1,2 @@
+// we need this alias file to import all the variables in the _vars.module.scss file into the global scope
+@use '@/styles/base/_vars.module.scss' as *;

@@ -13,6 +13,7 @@
     "trailingComma": "none",
     "useTabs": false,
     "endOfLine": "lf",
+    "order": "concentric-css",
     "importOrder": ["^@core/(.*)$", "^@server/(.*)$", "^@ui/(.*)$", "^[./]"],
     "importOrderSeparation": true,
     "importOrderSortSpecifiers": true

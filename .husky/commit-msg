@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+echo '🏗️👷 we are cheking your commit message input👷‍♂️🏗️'
+npx commitlint --edit $1

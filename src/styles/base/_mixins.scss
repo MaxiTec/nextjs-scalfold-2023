@@ -1,0 +1,57 @@
+// create a sass mixin of triangle pseudo element
+@use 'sass:color';
+@mixin triangle($width, $height, $color: #000, $direction: 'bottom') {
+  display: block;
+  border-width: $width $height;
+  border-style: solid;
+  border-color: transparent;
+  width: 0;
+  height: 0;
+  content: '';
+  @if $direction == 'top' {
+    border-bottom-color: $color;
+  } @else if $direction == 'right' {
+    border-left-color: $color;
+  } @else if $direction == 'bottom' {
+    border-top-color: $color;
+  } @else if $direction == 'left' {
+    border-right-color: $color;
+  }
+}
+// mixin for generate buttons
+@mixin button($color, $background, $border) {
+  border-color: $border;
+  border-radius: $border-radius-base;
+  background-color: $background;
+  padding: 0.75rem 2rem;
+  color: color-contrast($background);
+  &:hover {
+    @if (color-contrast($background) == white) {
+      background-color: lighten($background, 10%);
+    } @else {
+      background-color: darken($background, 10%);
+    }
+    box-shadow: $shadow-buttons;
+    color: color.invert(color-contrast($background));
+  }
+}
+
+// mixin center an absolute element
+@mixin center-absolute($width, $height) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -($height / 2);
+  margin-left: -($width / 2);
+  width: $width;
+  height: $height;
+}
+
+@function color-contrast($color) {
+  // https://codepen.io/vincent-valentin/pen/XebERx
+  @if (0.2126 * red($color) + 0.7152 * green($color) + 0.0722 * blue($color)) / 255 > 1/2 {
+    @return black;
+  } @else {
+    @return white;
+  }
+}
